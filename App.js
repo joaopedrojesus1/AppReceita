@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, StatusBar, ScrollView, Text } from 'react-native';
 import AppBar from './AppBar';
-import RecipeListPage from './RecipeListPage';
-import RecipeDetailPage from './RecipeDetailPage';
+import RecipeListPage from './Listar';
+import RecipeDetailPage from './Detalhe';
 
 
 const ModalContainer = ({ children }) => {
