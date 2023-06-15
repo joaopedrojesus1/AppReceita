@@ -12,10 +12,6 @@ const RecipeDetailPage = ({ recipe, onClose }) => {
           <View style={styles.content}>
             <Text style={styles.title}>{recipe.title}</Text>
             <Image source={{ uri: recipe.image }} style={{ width: 360, height: 310, alignItems: 'center',}} />
-            <View style={styles.div}>
-            <Text>Tempo de Preparo: {recipe.preparationTime}</Text>
-            <Text>Nível de Dificuldade: {recipe.difficulty}</Text>
-          </View>
             <View style={styles.divIngredientes}>
             <View style={styles.divIngredientes}>
           <Text style={{ fontWeight: 'bold'}}>Ingredientes</Text>
@@ -25,6 +21,9 @@ const RecipeDetailPage = ({ recipe, onClose }) => {
               <Text>{section.items.join('\n')}</Text>
             </View>
           ))}
+          
+
+          </View>
           <View style={styles.divPreparo}>
             <Text style={{ fontWeight: '500'}}>Modo de Preparo</Text>
             {recipe.instructions.map((section, index) => (
@@ -32,18 +31,14 @@ const RecipeDetailPage = ({ recipe, onClose }) => {
             <Text style={{ fontWeight: '500', marginTop: 10 }}>{section.section}</Text>
             <Text>{section.items.join('\n')}</Text>
           </View>
-
           ))}
-
+          <View style={styles.div}>
+            <Text>Tempo de Preparo: {recipe.preparationTime}</Text>
+            <Text>Nível de Dificuldade: {recipe.difficulty}</Text>
           </View>
         </View>
-    </View>
-
-          
-
-        
-              
-            </View>
+    </View>            
+  </View>
           <View>
             {/* <View style={styles.divPreparo}>
               <Text style={{ fontWeight: '500' }}>'Modo de Preparo'</Text>
@@ -87,7 +82,6 @@ const styles = StyleSheet.create({
   div: {
     backgroundColor: '#ff4ca2',
     color: '#fff',
-    margin: 15,
     elevation: 2,
     alignItems: 'center',
     paddingTop: 15,
@@ -115,13 +109,11 @@ const styles = StyleSheet.create({
   },
   divClose: {
     backgroundColor: '#D7F2FF',
-    margin: 15,
     elevation: 2,
-    paddingLeft: 10,
     paddingTop: 15,
     paddingBottom: 15,
-    borderRadius: 5,
-    width: 65,
+    borderRadius: 5, 
+    alignItems: 'center'
    
   },
   contentContainer: {

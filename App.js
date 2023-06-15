@@ -21,9 +21,6 @@ const App = () => {
       id: 1,
       title: 'Bolo de Fubá',
       image: 'https://s.cornershopapp.com/product-images/2151417.png?versionId=bRwSf75RWvfgTyUhF9.t0Osyx.m41f17',
-      video: 'https://www.youtube.com/watch?v=zsotDeVzJFA',
-      preparationTime: '1 hora',
-      difficulty: 'Facil',
       ingredients: [
         {
           items: [
@@ -77,6 +74,8 @@ const App = () => {
         },
 
       ],
+      preparationTime: '1 hora',
+      difficulty: 'Facil',
 
     },
 
@@ -84,8 +83,6 @@ const App = () => {
       id: 2,
       title: 'Torta de Limão',
       image: 'https://bocadoforno.com.br/wp-content/uploads/mousse-limao3.png  ',
-      preparationTime: '1 hora',
-      difficulty: 'Médio',
       ingredients: [
         {
           items: [
@@ -124,14 +121,14 @@ const App = () => {
         },
 
       ],
+      preparationTime: '1 hora',
+      difficulty: 'Médio',
     },
     
     {
       id: 3,
       title: 'Pudim',
       image: 'https://images.tcdn.com.br/img/img_prod/727553/curso_festival_de_mini_pudins_data_a_agendar_427_1_e776824e653f8d42284acc0887fddeb9.png ',
-      preparationTime: '1 hora',
-      difficulty: 'Médio',
       ingredients: [
         {
           items: [
@@ -173,13 +170,13 @@ const App = () => {
         },
 
       ],
+      preparationTime: '1 hora',
+      difficulty: 'Médio',
     },
     {
       id: 4,
       title: 'Brigadeiro',
       image: 'https://www.gebon.com.br/image/media/_00300/339/picole-classico-brigadeiro.png ',
-      preparationTime: '50 min',
-      difficulty: 'Facil',
       ingredients: [
         {
           items: [
@@ -215,6 +212,8 @@ const App = () => {
         },
 
       ],
+      preparationTime: '50 min',
+      difficulty: 'Facil',
     },
     
     
